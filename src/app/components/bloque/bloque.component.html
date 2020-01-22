@@ -1,0 +1,17 @@
+<div class="col-12 mt-3" *ngFor="let bloque of bloques">
+    <div class="input-group mb-3 col-12">
+        <input type="text" class="form-control title-name" [(value)]="bloque.titulo" placeholder="Nombre de Bloque" aria-label="Nombre de Bloque" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary border-0" (click)="agregarBloque()" type="button">Agregar Bloque</button>
+        </div>
+    </div>
+    <div class="border">
+        <div class="parametters-title d-flex border-secondary">
+            <p class="d-inline-block mr-auto m-0">PARAMETROS DE BLOQUE</p>
+        </div>
+        <div class="d-flex border m-2">
+            <app-parametros class="w-100"></app-parametros>
+        </div>
+        
+    </div>
+</div>

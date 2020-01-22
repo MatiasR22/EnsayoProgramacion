@@ -1,0 +1,27 @@
+<form class="col-12 pt-3 border-bottom pb-3" submit="" *ngFor="let parametro of parametros">
+    <div class="form-group col-2 d-inline-block">
+        <label>Moneda:</label>
+        <input type="text" class="form-control" [(value)]="parametro.moneda" aria-describedby="monedaHelp" placeholder="Ingrese tipo de Moneda">
+    </div>
+    <div class="form-group col-2 d-inline-block">
+        <label>Precio por Pax:</label>
+        <input type="text" class="form-control" [(value)]="parametro.precioPorPax" aria-describedby="precioPorPaxHelp" placeholder="Ingresar precio por pax">
+    </div>
+    <div class="form-group col-2 d-inline-block">
+        <label>Impuesto:</label>
+        <input type="text" class="form-control" [(value)]="parametro.impuesto" aria-describedby="impuestoHelp" placeholder="Ingresar impuesto">
+    </div>
+    <div class="form-group col-2 d-inline-block">
+        <label>Total:</label>
+        <input type="text" class="form-control" [(value)]="parametro.total" aria-describedby="totalHelp" placeholder="Ingresar total">
+    </div>
+    <div class="form-group col-2 d-inline-block">
+        <label>Comision:</label>
+        <input type="text" class="form-control" [(value)]="parametro.comision" aria-describedby="comisionHelp" placeholder="Ingresar comision">
+    </div>
+    <button class="btn btn-outline-secondary d-inline-block ml-auto col-2" type='button' (click)="agregarParametros()">Agregar Parametro</button>
+</form>
+
+<div class="border border-top-0 p-3 pl-4">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum recusandae, aut consequatur expedita reiciendis eveniet culpa error impedit, adipisci sed veritatis fugit quibusdam sunt temporibus. Aliquam ducimus odit inventore laboriosam.</p>
+</div>
